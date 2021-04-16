@@ -1,0 +1,9 @@
+numpy
+pandas
+moviepy
+opencv-python
+h5py
+torch
+torchvision
+scipy
+ortools
