@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/supervised-video-summarization-via-multiple/supervised-video-summarization-on-summe)](https://paperswithcode.com/sota/supervised-video-summarization-on-summe?p=supervised-video-summarization-via-multiple)
+
 # MSVA (Multi Source Visual Attention)
 MSVA is a deep learning model for supervised video summarization. In this research, we address this research gap and investigate how different feature types, i.e., static and motion features, can be integrated in a model architecture for video summarization.
 
