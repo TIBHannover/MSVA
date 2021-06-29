@@ -57,7 +57,7 @@ class MSVA_Gen_auto(nn.Module):  # MSVA auto variation train and learn for diffe
         self.hidden_size = self.m 
         self.apperture= self.feat_input.apperture
         self.att_1_3_size =self.feat_input.feature_size_1_3
-        self.att1_3 = SelfAttention(apperture=self.apperture,input_size=self.att_1_3_size, output_size=self.att_1_3_size,dropout=self.feat_input.att_dropout1
+        self.att1_3 = SelfAttention(apperture=self.apperture,input_size=self.att_1_3_size, output_size=self.att_1_3_size,dropout=self.feat_input.att_dropout1)
         self.ka1_3 = nn.Linear(in_features=self.att_1_3_size , out_features=self.feat_input.L1_out)
         self.kb = nn.Linear(in_features=self.ka1_3.out_features, out_features=self.feat_input.L2_out)
         self.kc = nn.Linear(in_features=self.kb.out_features, out_features=self.feat_input.L3_out)
