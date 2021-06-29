@@ -71,7 +71,7 @@ Update parameters.json for desired experimental parameters.s.
 "feat_input":{"feature_size":365,"L1_out":365,"L2_out":365,"L3_out":512,"pred_out":1,"apperture":250,"dropout1":0.5,"att_dropout1":0.5,"feature_size_1_3":1024,"feature_size_4":365}}
 ```
 
-## Other Options for Configuration Parameters
+## Details & Options for Configuration Parameters
 ``` bash
 "verbose" // True or False : if you want to see detailed running logs or not
 "use_cuda" // True or False : if code should execute with GPU or CPU
