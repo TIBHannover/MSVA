@@ -39,28 +39,29 @@ tar -xvf datasets.tar
 Dataset directory details to unerstand files heirarchies:
 ```
 /datasets
-	/kinetic_features	(features extracted using pretrained I3D model)	
-		/summe
-			/FLOW
-				/features
-					/*.npy   (files containing extracted features)
-			/RGB
-				/features
-					/*.npy
-			/targets
-		/tvsum
-			/FLOW
-				/features
-					/*.npy
-			/RGB
-				/features
-					/*.npy
-			/targets
-				/*.npy
-	/object_features
-		/eccv16_dataset_summe_google_pool5.h5
-		/eccv16_dataset_tvsum_google_pool5.h5
-		/readme.txt
+   /kinetic_features	(features extracted using pretrained I3D model)	
+      /summe
+         /FLOW
+            /features
+               /*.npy   (files containing extracted features)
+         /RGB
+            /features
+               /*.npy
+         /targets	(labels synchronized with /object_features labels)
+               /*.npy  
+      /tvsum
+         /FLOW
+            /features
+               /*.npy 
+         /RGB
+            /features
+               /*.npy 
+         /targets
+               /*.npy
+   /object_features
+      /eccv16_dataset_summe_google_pool5.h5
+      /eccv16_dataset_tvsum_google_pool5.h5
+      /readme.txt
 
 h5 files structure (object_features)
 /key
