@@ -87,7 +87,7 @@ python train.py -params parameters.json
 ``` bash
 python inference.py -dataset "summe" -video_name "Air_Force_One" -model_weight "model_weights/summe_random_non_overlap_0.5359.tar.pth"
 ```
-![inference(media/prediction_score_for_video_summary.png)
+![inference](media/prediction_score_for_video_summary.png)
 
 ## Experimental Configuration
 Update parameters.json for desired experimental parameters.s.
