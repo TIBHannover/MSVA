@@ -13,7 +13,7 @@ The paper is available on:
 # MSVA (Multi Source Visual Attention)
 MSVA is a deep learning model for supervised video summarization. In this research, we address this research gap and investigate how different feature types, i.e., static and motion features, can be integrated in a model architecture for video summarization.
 
-![msva model](media/msva_model.JPG)
+![msva model](media/msva_model.PNG)
 
 ## Get started (Requirements and Setup)
 Python version >= 3.6
@@ -32,6 +32,49 @@ Extracted features for the datasets can be downloaded as,
 ``` bash
 wget -O datasets.tar https://zenodo.org/record/4682137/files/msva_video_summarization.tar
 tar -xvf datasets.tar
+```
+
+### Dataset Files Structure
+
+Dataset directory details to unerstand files heirarchies:
+```
+/datasets
+	/kinetic_features	(features extracted using pretrained I3D model)	
+		/summe
+			/FLOW
+				/features
+					/*.npy   (files containing extracted features)
+			/RGB
+				/features
+					/*.npy
+			/targets
+		/tvsum
+			/FLOW
+				/features
+					/*.npy
+			/RGB
+				/features
+					/*.npy
+			/targets
+				/*.npy
+	/object_features
+		/eccv16_dataset_summe_google_pool5.h5
+		/eccv16_dataset_tvsum_google_pool5.h5
+		/readme.txt
+
+h5 files structure (object_features)
+/key
+    /features                 2D-array with shape (n_steps, feature-dimension)
+    /gtscore                  1D-array with shape (n_steps), stores ground truth improtance score (used for training, e.g. regression loss)
+    /user_summary             2D-array with shape (num_users, n_frames), each row is a binary vector (used for test)
+    /change_points            2D-array with shape (num_segments, 2), each row stores indices of a segment
+    /n_frame_per_seg          1D-array with shape (num_segments), indicates number of frames in each segment
+    /n_frames                 number of frames in original video
+    /picks                    posotions of subsampled frames in original video
+    /n_steps                  number of subsampled frames
+    /gtsummary                1D-array with shape (n_steps), ground truth summary provided by user (used for training, e.g. maximum likelihood)
+    /video_name (optional)    original video name, only available for SumMe dataset	
+	
 ```
 
 ## Training and Crossfold Validation
@@ -71,7 +114,7 @@ Update parameters.json for desired experimental parameters.s.
 "feat_input":{"feature_size":365,"L1_out":365,"L2_out":365,"L3_out":512,"pred_out":1,"apperture":250,"dropout1":0.5,"att_dropout1":0.5,"feature_size_1_3":1024,"feature_size_4":365}}
 ```
 
-## Details & Options for Configuration Parameters
+## Other Options for Configuration Parameters
 ``` bash
 "verbose" // True or False : if you want to see detailed running logs or not
 "use_cuda" // True or False : if code should execute with GPU or CPU
