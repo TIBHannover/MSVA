@@ -13,7 +13,7 @@ The paper is available on:
 # MSVA (Multi Source Visual Attention)
 MSVA is a deep learning model for supervised video summarization. In this research, we address this research gap and investigate how different feature types, i.e., static and motion features, can be integrated in a model architecture for video summarization.
 
-![msva model](media/msva_model.PNG)
+![msva model](media/msva_model.JPG)
 
 ## Get started (Requirements and Setup)
 Python version >= 3.6
@@ -87,7 +87,7 @@ python train.py -params parameters.json
 ``` bash
 python inference.py -dataset "summe" -video_name "Air_Force_One" -model_weight "model_weights/summe_random_non_overlap_0.5359.tar.pth"
 ```
-![inference(media/prediction score for video summary.png)
+![inference(media/prediction_score_for_video_summary.png)
 
 ## Experimental Configuration
 Update parameters.json for desired experimental parameters.s.

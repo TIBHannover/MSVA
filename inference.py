@@ -84,7 +84,7 @@ else:
 #    print("output y_hat: ", y)
     xLab = "video time lime"
     yLab = "score to be in video summary"
-    tittle = "prediction score for video summary"
+    tittle = "prediction_score_for_video_summary"
     plt.xlabel(xLab)
     plt.ylabel(yLab)
     plt.title(tittle)
