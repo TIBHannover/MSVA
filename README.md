@@ -83,6 +83,11 @@ h5 files structure (object_features)
 # for training, crossfold validation according to default parameters "parameters.json".
 python train.py -params parameters.json
 ```
+## Inference with extracted features for summary scores
+``` bash
+python inference.py -dataset "summe" -video_name "Air_Force_One" -model_weight "model_weights/summe_random_non_overlap_0.5359.tar.pth"
+```
+![inference(media/prediction score for video summary.png)
 
 ## Experimental Configuration
 Update parameters.json for desired experimental parameters.s.
