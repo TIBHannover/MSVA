@@ -1,6 +1,6 @@
 
 
-##For Object Features 
+## For Object Features 
 
 ``` bash
 from efficientnet_pytorch import EfficientNet
@@ -24,7 +24,7 @@ https://github.com/VideoAnalysis/EDUVSUM/tree/master/src
 
 
 
-##For Kinetic Features(FLOW & RGB)
+## For Kinetic Features(FLOW & RGB)
 
 1- Download checkpoints "https://github.com/deepmind/kinetics-i3d/tree/master/data/checkpoints/rgb_imagenet". 
 2-Extract video frames (like: fps=16).
