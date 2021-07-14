@@ -27,6 +27,7 @@ https://github.com/VideoAnalysis/EDUVSUM/tree/master/src
 ## For Kinetic Features(FLOW & RGB)
 
 1- Download checkpoints "https://github.com/deepmind/kinetics-i3d/tree/master/data/checkpoints/rgb_imagenet". 
+
 2-Extract video frames (like: fps=16).
 ``` bash
 ffmpeg -i [video_input_path] -r 16 [video_save_dir]/%d.jpg
