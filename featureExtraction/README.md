@@ -46,3 +46,6 @@ Reference:
 https://github.com/JaywongWang/I3D-Feature-Extractor
 https://github.com/Finspire13/pytorch-i3d-feature-extraction
 
+Note:
+if you haev confusion in loading checkpoints, go through the link below
+https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/
